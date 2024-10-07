@@ -1,0 +1,15 @@
+footer{
+    text-align: center;
+    background-color: #a495bf;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding-block:1rem ;
+    margin-top: 3rem;
+    color: #e6e6e6;
+    font-size: 17px;
+
+& span{
+    color:#5d4588 ;
+    text-transform: capitalize;
+}
+}

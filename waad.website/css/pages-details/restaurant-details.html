@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="shortcut icon" href="./img/H.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="/css/pages/footer.css">
+     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+    <title>restaurant of hail</title>
+</head>
+<body>
+   <nav>
+      <a href="" class="logo"> <span>H</span>ail<span>D</span>estnaition</a>
+      <ul id="menuList">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/css/pages-details/coffee-details.html">coffee</a></li>
+          <li><a href="/css/pages-details/active-deails.html">active</a></li>
+          <li><a href="/css/pages-details/hotels-details.html">hotels</a></li>
+          <li><a href="/css/pages-details/about-us.html">about us</a></li>
+          <li><a href="/css/pages-details/sing-in.html">sign in</a></li>
+      </ul>
+
+      <div class="menu-icon">
+        <a href="/css/pages-details/sing-in.html">
+          <i class="fas fa-user"></i></a>
+          <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+      </div>
+
+    </nav>
+  
+
+
+    <main>
+    <section class="list flex">
+    <div class="card">
+        <img src="/img/the area burger.jpg" alt="image">
+        <div class="content">
+            <div class="title">the area burger
+            <p> مطعم متخصص في تقديم البرجر بأنواعه المختلفة مع مجموعة متنوعة من الإضافات المبتكرة والصلصات المميزة.</p>
+        </div>
+        <div class="contenr-card ">
+     <div class="Rating">Rating
+       <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+       </div>
+    </div>
+       <div class="line"></div>
+       <div class="praise">Praise
+        <p id="content-in-card">20-40rs</p>
+       </div>
+         <div class="line"></div>
+         <div class="map">
+         <a href="https://maps.app.goo.gl/aLq7R5M5VAMAkegr8">
+            <i class="fas fa-map-marker-alt"></i>
+          </a>
+         </div>
+
+        </div>
+        </div>
+    </div>
+   
+
+
+    <div class="card">
+        <img src="/img/blend dslsd.jpg" alt="image">
+        <div class="content">
+            <div class="title">blend slad
+            <p>مطعم يركز على تقديم السلطات الطازجة والمكونات الصحية، مع تشكيلة واسعة من الخلطات والإضافات لتناسب جميع الأذواق.</p>
+        </div>
+        <div class="contenr-card ">
+     <div class="Rating">Rating
+       <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+       </div>
+    </div>
+       <div class="line"></div>
+       <div class="praise">Praise
+        <p id="content-in-card">20-40rs</p>
+       </div>
+         <div class="line"></div>
+         <div class="map">
+          <a href="https://maps.app.goo.gl/5AT8yhJwvNx8CuyCA">
+            <i class="fas fa-map-marker-alt"></i></a>
+          </div>
+        </div>
+        </div>
+    </div>
+
+
+
+    <div class="card">
+        <img src="/img/kushkar.jpg" alt="image">
+        <div class="content">
+            <div class="title">kushkar
+            <p>  مطعم يقدم أطباق متنوعة من المأكولات الشعبية والمحلية، مع تركيز على جودة المكونات والطعم الأصيل.
+            </p>
+        </div>
+        <div class="contenr-card ">
+     <div class="Rating">Rating
+       <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half-stroke"></i>
+       </div>
+    </div>
+       <div class="line"></div>
+       <div class="praise">Praise
+        <p id="content-in-card">20-40rs</p>
+       </div>
+         <div class="line"></div>
+         <div class="map">
+          <a href="https://maps.app.goo.gl/2ZZxhF7qfLtZPeePA">
+            <i class="fas fa-map-marker-alt"></i></a>
+          </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="card">
+        <img src="/img/telano.jpg" alt="image">
+        <div class="content">
+            <div class="title"> telano
+            <p> مطعم يقدم تجربة طعام إيطالية أصيلة من خلال تقديم أطباق البيتزا والمعكرونة المحضرة بوصفات تقليدية.
+            </p>
+        </div>
+        <div class="contenr-card ">
+     <div class="Rating">Rating
+       <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half-stroke"></i>
+       </div>
+    </div>
+       <div class="line"></div>
+       <div class="praise">Praise
+        <p id="content-in-card">20-40rs</p>
+       </div>
+         <div class="line"></div>
+         <div class="map">
+          <a href="https://maps.app.goo.gl/V5visAZGANeoAT9N7">
+            <i class="fas fa-map-marker-alt"></i></a>
+          </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="card">
+        <img src="/img/shrimp nation.jpg" alt="image">
+        <div class="content">
+            <div class="title">shrimp nation
+            <p>وجهة لعشاق المأكولات البحرية، حيث يقدم المطعم أطباق الروبيان (الشرمب) المحضرة بوصفات متنوعة ولذيذة.
+            </p>
+        </div>
+        <div class="contenr-card ">
+     <div class="Rating">Rating
+       <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+       </div>
+    </div>
+       <div class="line"></div>
+       <div class="praise">Praise
+        <p id="content-in-card">20-40rs</p>
+       </div>
+         <div class="line"></div>
+         <div class="map">
+          <a href="https://maps.app.goo.gl/RSJUmk8iT6cvBGJV9">
+            <i class="fas fa-map-marker-alt"></i></a>
+          </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="card">
+        <img src="/img/loft.jpg" alt="image">
+        <div class="content">
+            <div class="title">loft
+            <p>مطعم يتميز بتقديم الأطباق العالمية مع ديكور عصري وخدمة مميزة، مما يجعله وجهة مثالية لتجربة طعام فاخرة.</p>
+        </div>
+        <div class="contenr-card ">
+     <div class="Rating">Rating
+       <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half-stroke"></i>
+       </div>
+    </div>
+       <div class="line"></div>
+       <div class="praise">Praise
+        <p id="content-in-card">20-40rs</p>
+       </div>
+         <div class="line"></div>
+         <div class="map">
+          <a href="https://maps.app.goo.gl/aG9aA2aU4hG2RnSQ8">
+            <i class="fas fa-map-marker-alt"></i></a>
+          </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="card">
+        <img src="/img/othman.jpg" alt="image">
+        <div class="content">
+            <div class="title">othman
+            <p>وجهة لعشاق الشاورما، حيث يتميز المطعم بتقديم الشاورما الطازجة والمحضرة بطرق تقليدية مع مكونات عالية الجودة.</p>
+        </div>
+        <div class="contenr-card ">
+     <div class="Rating">Rating
+       <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half-stroke"></i>
+       </div>
+    </div>
+       <div class="line"></div>
+       <div class="praise">Praise
+        <p id="content-in-card">20-40rs</p>
+       </div>
+         <div class="line"></div>
+         <div class="map">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="card">
+        <img src="/img/opalo.jpg" alt="image">
+        <div class="content">
+            <div class="title">opalo
+            <p> مطعم يقدم تجربة طعام راقية من خلال تقديم أطباق مبتكرة ومقدمة بشكل فني، مع أجواء راقية.
+            </p>
+        </div>
+        <div class="contenr-card ">
+     <div class="Rating">Rating
+       <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+       </div>
+    </div>
+       <div class="line"></div>
+       <div class="praise">Praise
+        <p id="content-in-card">20-40rs</p>
+       </div>
+         <div class="line"></div>
+         <div class="map">
+          <a href="https://maps.app.goo.gl/3eLRVbh6DopFBjKAA">
+            <i class="fas fa-map-marker-alt"></i></a>
+          </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="card">
+        <img src="/img/ruga roko.jpg" alt="image">
+        <div class="content">
+            <div class="title">ruga roko
+            <p> مطعم يقدم تجربة طعام مستوحاة من المأكولات الآسيوية، مع مجموعة متنوعة من الأطباق التي تجمع بين النكهات التقليدية والعصرية.
+            </p>
+        </div>
+        <div class="contenr-card ">
+     <div class="Rating">Rating
+       <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half-stroke"></i>
+       </div>
+    </div>
+       <div class="line"></div>
+       <div class="praise">Praise
+        <p id="content-in-card">20-40rs</p>
+       </div>
+         <div class="line"></div>
+         <div class="map">
+          <a href="https://maps.app.goo.gl/gYoK3Sps6y7wcWiW7">
+            <i class="fas fa-map-marker-alt"></i></a>
+          </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="card">
+        <img src="/img/bms-burger.jpg" alt="image">
+        <div class="content">
+            <div class="title">BMS
+            <p>وجهة مميزة لعشاق البرجر، حيث يقدم المطعم مجموعة متنوعة من البرجر اللذيذ والمعد بمكونات طازجة.
+            </p>
+        </div>
+        <div class="contenr-card ">
+     <div class="Rating">Rating
+       <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+       </div>
+    </div>
+       <div class="line"></div>
+       <div class="praise">Praise
+        <p id="content-in-card">20-40rs</p>
+       </div>
+         <div class="line"></div>
+         <div class="map">
+          <a href="https://maps.app.goo.gl/3QWbh6ygTwjya9WZ6">
+            <i class="fas fa-map-marker-alt"></i></a>
+          </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="card">
+        <img src="/img/bubbels.jpg" alt="image">
+        <div class="content">
+            <div class="title">BUBBELS
+            <p> مطعم يقدم تجربة فريدة من خلال تقديم الحلويات والمشروبات الغازية بطرق مبتكرة ومميزة.
+            </p>
+        </div>
+        <div class="contenr-card ">
+     <div class="Rating">Rating
+       <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+       </div>
+    </div>
+       <div class="line"></div>
+       <div class="praise">Praise
+        <p id="content-in-card">-40rs</p>
+       </div>
+         <div class="line"></div>
+         <div class="map">
+          <a href="https://maps.app.goo.gl/mcVKQ2QNwZBNmNEZ6">
+            <i class="fas fa-map-marker-alt"></i></a>
+          </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="card">
+        <img src="/img/flox.jpg" alt="image">
+        <div class="content">
+            <div class="title">Flox
+            <p>20.  مطعم يقدم أطباق متنوعة من المأكولات العالمية والمحلية مع تركيز على تقديم تجربة طعام فاخرة وأجواء راقية.</p>
+        </div>
+        <div class="contenr-card ">
+     <div class="Rating">Rating
+       <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+       </div>
+    </div>
+       <div class="line"></div>
+       <div class="praise">Praise
+        <p id="content-in-card">20-40rs</p>
+       </div>
+         <div class="line"></div>
+         <div class="map">
+          <a href="https://maps.app.goo.gl/unvdv9JXDNvwEJEs6">
+            <i class="fas fa-map-marker-alt"></i></a>
+          </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="card">
+        <img src="/img/السده.jpg" alt="image">
+        <div class="content">
+            <div class="title">السده
+            <p>مطعم يقدم المأكولات الشعبية واليمنية، ويشتهر بتقديم أطباق مثل المندي والزربيان، مع ديكور يعكس الطابع التقليدي.</p>
+        </div>
+        <div class="contenr-card ">
+     <div class="Rating">Rating
+       <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half-stroke"></i>
+       </div>
+    </div>
+       <div class="line"></div>
+       <div class="praise">Praise
+        <p id="content-in-card">20-40rs</p>
+       </div>
+         <div class="line"></div>
+         <div class="map">
+          <a href="https://maps.app.goo.gl/vLLHEJUCjRVmbuH48">
+            <i class="fas fa-map-marker-alt"></i></a>
+          </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="card">
+        <img src="/img/الوادي المبارك.jpg" alt="image">
+        <div class="content">
+            <div class="title">الوادي المبارك
+            <p> مطعم يتميز بتقديم أطباق متنوعة من المأكولات الشرقية والخليجية مع تركيز على الطعم الأصيل والجودة.
+            </p>
+        </div>
+        <div class="contenr-card ">
+     <div class="Rating">Rating
+       <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half-stroke"></i>
+       </div>
+    </div>
+       <div class="line"></div>
+       <div class="praise">Praise
+        <p id="content-in-card">20-40rs</p>
+       </div>
+         <div class="line"></div>
+         <div class="map">
+          <a href="https://maps.app.goo.gl/uWGtnEegfTda1FFe7">
+            <i class="fas fa-map-marker-alt"></i></a>
+          </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="card">
+        <img src="/img/alqasrain.jpg" alt="image">
+        <div class="content">
+            <div class="title">القصرين
+            <p>  مطعم متخصص في تقديم أطباق القصر الفاخرة والولائم، مع تشكيلة متنوعة من الأطباق التي تناسب جميع المناسبات.
+            </p>
+        </div>
+        <div class="contenr-card ">
+     <div class="Rating">Rating
+       <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+       </div>
+    </div>
+       <div class="line"></div>
+       <div class="praise">Praise
+        <p id="content-in-card">20-40rs</p>
+       </div>
+         <div class="line"></div>
+         <div class="map">
+          <a href="https://maps.app.goo.gl/VyogHRpGmYughLtL7">
+            <i class="fas fa-map-marker-alt"></i></a>
+          </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <img src="/img/بيكوال.jpg" alt="image">
+        <div class="content">
+            <div class="title">بيكوال
+            <p>   مطعم يقدم تجربة مميزة لمحبي البرجر والوجبات السريعة، مع تشكيلة واسعة من الخيارات التي تناسب جميع الأذواق.
+
+            </p>
+        </div>
+        <div class="contenr-card ">
+     <div class="Rating">Rating
+       <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half-stroke"></i>
+       </div>
+    </div>
+       <div class="line"></div>
+       <div class="praise">Praise
+        <p id="content-in-card">20-40rs</p>
+       </div>
+         <div class="line"></div>
+         <div class="map">
+          <a href="https://maps.app.goo.gl/E81cNnfo2eEzP8o48">
+            <i class="fas fa-map-marker-alt"></i></a>
+          </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <img src="/img/atoca.jpg" alt="image">
+        <div class="content">
+            <div class="title">atoca
+            <p>  مطعم يقدم تجربة فريدة من نوعها من خلال تقديم مجموعة متنوعة من الأطباق العالمية مع لمسة عصرية.
+            </p>
+        </div>
+        <div class="contenr-card ">
+     <div class="Rating">Rating
+       <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half-stroke"></i>
+       </div>
+    </div>
+       <div class="line"></div>
+       <div class="praise">Praise
+        <p id="content-in-card">20-40rs</p>
+       </div>
+         <div class="line"></div>
+         <div class="map">
+          <a href="https://maps.app.goo.gl/cLhciJBe28igVoAQ8">
+            <i class="fas fa-map-marker-alt"></i></a>
+          </div>
+            </div>
+        </div>
+    </div>
+   
+
+    <div class="card">
+        <img src="/img/slider.jpg" alt="image">
+        <div class="content">
+            <div class="title">slider
+            <p>طعم متخصص في تقديم السلايدرز الصغيرة بنكهات متنوعة ومبتكرة، مما يجعله وجهة مثالية لعشاق الوجبات السريعة.
+            </p>
+        </div>
+        <div class="contenr-card ">
+     <div class="Rating">Rating
+       <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+       </div>
+    </div>
+       <div class="line"></div>
+       <div class="praise">Praise
+        <p id="content-in-card">20-40rs</p>
+       </div>
+         <div class="line"></div>
+         <div class="map">
+          <a href="https://maps.app.goo.gl/HocQueYQ9HxzrPRv7">
+            <i class="fas fa-map-marker-alt"></i></a>
+          </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+
+    <div class="card">
+        <img src="/img/بهارات.jpg" alt="image">
+        <div class="content">
+            <div class="title">بهارات
+            <p>  مطعم يقدم تجربة طعام هندية أصيلة في حائل، حيث يقدم تشكيلة واسعة من الأطباق الهندية التقليدية
+
+            </p>
+        </div>
+        <div class="contenr-card ">
+     <div class="Rating">Rating
+       <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half-stroke"></i>
+       </div>
+    </div>
+       <div class="line"></div>
+       <div class="praise">Praise
+        <p id="content-in-card">20-50rs</p>
+       </div>
+         <div class="line"></div>
+         <div class="map">
+          <a href="https://maps.app.goo.gl/MALkEwWxky8NWBVz8">
+            <i class="fas fa-map-marker-alt"></i></a>
+          </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="card">
+        <img src="/img/shrimper.jpg" alt="image">
+        <div class="content">
+            <div class="title">shrimper
+            <p> مطعم يتميز بتقديم أطباق الروبيان (الشرمب) الطازجة والمحضرة بوصفات متنوعة لتناسب جميع الأذواق
+
+            </p>
+        </div>
+        <div class="contenr-card ">
+     <div class="Rating">Rating
+       <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+       </div>
+    </div>
+       <div class="line"></div>
+       <div class="praise">Praise
+        <p id="content-in-card">20-60rs</p>
+       </div>
+         <div class="line"></div>
+
+         <div class="map">
+          <a href="https://maps.app.goo.gl/EZCktMiqESQWWBE19">
+            <i class="fas fa-map-marker-alt"></i>
+          </a>
+          </div>
+         
+            </div>
+        </div>
+    </div>
+   
+</section>
+</main>
+
+<footer>
+    Designed and developed by <span>waad fahad</span> 2024
+</footer>
+<script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+/*==============  backround img  ============*/
+div.top-img{
+    position: relative;
+    height: 100vh;
+    background-image: url(../../img/3img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color:#f5f5f5;
+}
+
+@media(max-width<600){
+    div.top-img{
+       background-position: center;
+    }
+}
+
+
+/*=============  texet on img  =============*/
+body{
+    background-color: #5c458823;
+    
+}
+section.content1{
+    margin-top: 80px;
+}
+
+ .welcome{
+    text-transform: uppercase;
+    font-size: 70px;
+    color:white;
+    font-weight: bold;
+    text-align: center;
+    
+   
+}
+
+.arab{
+    font-size: 25px;
+    font-weight: 400;
+    color: black;
+    display: block;
+    text-align: center;
+    margin: 1em 5rem;
+
+}
+
+
+/*                                                  part2                                   */
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),
+                0 6px 20px 0 rgba(0,0,0,0.19);
+                width: 250px;
+                height: 350px;
+                border-radius: 16px;
+                position: relative;
+                              
+}
+.card img{
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 16px 16px 0 0;
+   
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-right: 30px;
+}
+
+& .card .content .title {
+    display: flex;
+    justify-content: center;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: black;
+}
+& .card .content .description {
+    padding-inline: 0.4rem;
+    margin-top: 0.4rem;
+    line-height: 1.1rem;
+    font-size: 0.75rem;
+    font-weight: 400;
+    font-weight: bold;
+    text-align: center;
+ 
+}
+
+
+.card:hover .card-background{
+    transform: scale(1.15) translateZ(0);
+    background-size: 300px;
+}
+
+
+.flex{
+    display:flex;
+    align-items:center;
+    align-items: flex-start;
+}
+
+
+main section.option .flex{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:2rem 1.4rem;
+}
+
+/*================   main contents (destination)    =========*/
+main h1.your-destination{
+
+   text-align: center;
+   margin: 10px 0 10px 0;
+
+}
+@media (width<600px){
+    main h1.your-destination{
+        margin:2.3rem 0 2rem 0%;
+        font-size: 1.4rem;
+
+    }
+}
+
+
+
+main section.option.flex{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:2rem 1.4rem;}
+  
+
+& article.card{
+   
+    box-shadow: rgba(0, 0, 0, 0.554) 0px 2px 1px -1px,
+                rgba(0, 0, 0, 0.554) 0px 1px 1px 0px,
+                rgba(0, 0, 0, 0.554) 0px 1px 3px 0px;
+    transition: 0.2s;
+}
+& article.card:hover{
+    scale: 1.01; 
+  
+}
+& img{
+    border-radius: 5px 5px 0 0;
+   height: 250px;
+}
+& .card.content{
+    background-color: #e6e6e6;
+    border-radius: 0 0 5px 5px;
+}
+
+& .card .content .title{
+    padding-top: 0.7rem;
+    padding-inline: 6rem;
+    text-transform: capitalize;
+}
+& .card .content .description{
+    padding-inline: 0.4rem;
+    font-size: 0.8rem;
+    margin-top: 0.4rem;
+    line-height: 1.1rem;
+}
+
+@media(max-width:768px){
+    .welcome{
+        font-size: 50px;  
+        position: none;
+    }
+    .arab{
+        font-size: 15px;
+        font-weight: 400;
+        color: black;
+        display: block;
+        text-align: center;
+        margin: 1em 5rem;
+    
+    }
+ 
+}
